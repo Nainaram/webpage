@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <style>.container-fluid {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .feedback-container {
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 80%;
+        max-width: 600px;
+        background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+        text-align: center;
+    }
+    
+    .feedback-container h2 {
+        margin-top: 0;
+    }
+    
+    .feedback-container form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .feedback-container label {
+        margin-bottom: 5px;
+    }
+    
+    .feedback-container input[type="text"],
+    .feedback-container input[type="email"],
+    .feedback-container textarea,
+    .feedback-container button[type="submit"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    
+    .feedback-container button[type="submit"] {
+        background-color: #4caf50; /* Example submit button background color */
+        color: white;
+        cursor: pointer;
+    }
+    
+    .feedback-container button[type="submit"]:hover {
+        background-color: #45a049; /* Example hover background color */
+    }
+    
+    /* Background Image */
+    .container-fluid {
+        background-image: url('blue_sky.jpg'); /* Path to your background image */
+        background-size: cover;
+        background-position: center;
+        height: 100vh; /* Make the background image cover the entire viewport height */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <header>
+            <!-- Nav options as before -->
+        </header>
+        <div class="feedback-container">
+            <h2>Provide Feedback</h2>
+            <form action="feedback_process.php" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="query">Query/Feedback:</label><br>
+                <textarea id="query" name="query" rows="4" cols="50"></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

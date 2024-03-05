@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <style>
+        /* Light Theme */
+.light-theme {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Dark Theme */
+.dark-theme {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <header>
+            <!-- Nav options as before -->
+        </header>
+        <div class="settings-container">
+            <h2>Change Theme</h2>
+            <label for="theme">Select Theme:</label>
+            <select id="theme" name="theme">
+                <option value="light">Light Theme</option>
+                <option value="dark">Dark Theme</option>
+            </select>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const themeSelect = document.getElementById("theme");
+
+    themeSelect.addEventListener("change", function() {
+        const selectedTheme = themeSelect.value;
+        setTheme(selectedTheme);
+    });
+
+    // Function to set the theme based on the selected option
+    function setTheme(theme) {
+        document.body.className = theme + "-theme";
+    }
+});
+
+    </script>
+</body>
+</html>

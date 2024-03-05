@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        .register-container {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 600px;
+    background-color: #f9f9f9; /* Example background color */
+}
+
+.register-container h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.register-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-container label {
+    margin-bottom: 5px;
+}
+
+.register-container input[type="text"],
+.register-container input[type="email"],
+.register-container input[type="password"],
+.register-container button[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.register-container button[type="submit"] {
+    background-color: #4caf50; /* Example submit button background color */
+    color: white;
+    cursor: pointer;
+}
+
+.register-container button[type="submit"]:hover {
+    background-color: #45a049; /* Example hover background color */
+}
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- <header>
+            <nav>
+                Nav options as before -->
+            <!-- </nav>
+        </header> -->
+        <div class="register-container">
+            <h2>Register to NRSC</h2>
+            <form action="register_process.php" method="post">
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname"><br>
+                <label for="mobile">Mobile Number:</label><br>
+                <input type="text" id="mobile" name="mobile"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password"><br>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+
