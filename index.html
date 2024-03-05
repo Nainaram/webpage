@@ -107,7 +107,7 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-      <div class="container-fluid" style="padding: 20px; text-align: center;">
+      <!-- <div class="container-fluid" style="padding: 20px; text-align: center;">
         <h1 style="margin-bottom: 20px;">Weather conditions</h1>
         <form action="/" method="post">
             <label for="cityInput" style="margin-right: 10px;">ENTER THE CITY</label>
@@ -115,7 +115,34 @@
             <button name="submit" class="btn btn-primary btn-secondary" > Go</button>
             
         </form>
-    </div>
+    </div> -->
+      <h1 style="text-align: center; margin-bottom: 25px; ">Check Weather!!</h1>
+        <div class="search">
+          <input type="text" placeholder="enter city name" spellcheck="false">
+          <button><img src="stickers/search.png" alt=""></button>
+      </div>
+      <div class="weather">
+          <img src="sticker/clouds.png" alt="" class="weather-icon" style="width: 50px;">
+          <h1 class="temp">22°C</h1>
+          <h2 class="city">NewYork</h2>
+          <div class="details">
+              <div class="col">
+                  <img src="stickers/drop.png" alt="">
+              </div>
+              <div>
+                  <p class="humidity">50%</p>
+                  <p>humidity</p>
+              </div>
+              <div class="col">
+                  <img src="stickers/wind.png" alt="">
+              </div>
+              <div>
+                  <p class="wind">50km/h</p>
+                  <p>Wind Speed</p>
+              </div>
+          </div>
+      </div>
+
     
         <div class="article">
           <div class="views-element-container">
@@ -278,7 +305,7 @@
     
 </div>
   
-     <!-- <script src="script.js"></script> -->
+     <script src="script.js"></script>
      <script>
       let currentSlide = 0;
 const slides = document.querySelectorAll('.image-slide');
